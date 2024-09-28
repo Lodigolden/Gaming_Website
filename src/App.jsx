@@ -1,4 +1,6 @@
 import Card from './Site/Card/Card.jsx'
+import Title from './Site/Title/Title.jsx'
+import checkersImage from './Site/Card/Assets/Checkers_Image.png'
 
 ///////////////////////////////////////////////////////////////////////////////
 /**
@@ -10,7 +12,8 @@ import Card from './Site/Card/Card.jsx'
 function App() {
   return(
     <>
-      <Card title='Checkers' />
+      <Title />
+      <Card title='Checkers' image={ checkersImage }/>
       <Card title='Catan' />
       <Card />
     </>
