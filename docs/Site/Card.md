@@ -1,5 +1,5 @@
 # Card
-The card component represents different games. 
+The **Card** component represents different games. 
 
 ## Props
 ### title
