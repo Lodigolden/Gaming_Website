@@ -1,3 +1,5 @@
+import Card from './Site/Card/Card.jsx'
+
 ///////////////////////////////////////////////////////////////////////////////
 /**
  * * The App component.
@@ -8,7 +10,9 @@
 function App() {
   return(
     <>
-      <h1>Hello World</h1>
+      <Card title='Checkers' />
+      <Card title='Catan' />
+      <Card />
     </>
   );
 };
