@@ -1,0 +1,37 @@
+import PropTypes from 'prop-types'
+import { useNavigate } from 'react-router-dom'
+
+import styles from './BackButton.module.css'
+
+///////////////////////////////////////////////////////////////////////////////
+/**
+ * * A BackButton component for the game site. 
+ * 
+ * TODO: This component is not done yet. 
+ */
+///////////////////////////////////////////////////////////////////////////////
+function BackButton() {
+  const navigate = useNavigate(); 
+
+  /////////////////////////////////////////////////////////////////////////////
+  // * Handles when someone clicks on the back button.
+  /////////////////////////////////////////////////////////////////////////////
+  const handleReturnClick = () => {
+    navigate('/');
+  }
+
+  return(
+    <div className={ styles.backbutton } onClick={ handleReturnClick }>
+      <p className={ styles.title }>X</p>
+    </div>
+  );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// * Prop data types.
+///////////////////////////////////////////////////////////////////////////////
+BackButton.propTypes = {
+  path: PropTypes.string,
+};
+
+export default BackButton;

@@ -1,6 +1,7 @@
-import Card from './Site/Card/Card.jsx'
-import Title from './Site/Title/Title.jsx'
-import checkersImage from './Site/Card/Assets/Checkers_Image.png'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import SiteOverview from './SiteOverview/SiteOverview.jsx'
+import Checkers from './Checkers/Checkers.jsx'
 
 ///////////////////////////////////////////////////////////////////////////////
 /**
@@ -12,10 +13,18 @@ import checkersImage from './Site/Card/Assets/Checkers_Image.png'
 function App() {
   return(
     <>
-      <Title />
-      <Card title='Checkers' image={ checkersImage }/>
-      <Card title='Catan' />
-      <Card />
+      <BrowserRouter>
+        <Routes>
+          <Route 
+            index path='/'
+            element={ <SiteOverview /> }
+          />
+          <Route 
+            checkers path='/checkers'
+            element={ <Checkers /> }
+          />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
