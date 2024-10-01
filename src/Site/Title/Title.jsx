@@ -1,42 +1,36 @@
-import styles from './Card.module.css'
+import styles from './Title.module.css'
 
 import PropTypes from 'prop-types'
 
 ///////////////////////////////////////////////////////////////////////////////
 /**
- * * A Card component for the game site. 
+ * * A Title component for the game site.
  * 
- * @param title The title of the card
+ * @param title The title of the website
  * 
  * TODO: This component is not done yet. 
  */
 ///////////////////////////////////////////////////////////////////////////////
-function Card(props) {
+function Title(props) {
   return(
-    <div className={ styles.card }>
-      <img 
-        className={ styles.cardimage }
-        src={ props.image }
-      ></img>
-      <h2 className={ styles.title }>{ props.title }</h2>
+    <div className={ styles.title }>
+      <h1 className={ styles.text }>{ props.title }</h1>
     </div>
-  );
+  ); 
 };
 
 ///////////////////////////////////////////////////////////////////////////////
 // * Prop data types.
 ///////////////////////////////////////////////////////////////////////////////
-Card.propTypes = {
+Title.propTypes = {
   title: PropTypes.string,
-  image: PropTypes.string
 };
 
 ///////////////////////////////////////////////////////////////////////////////
-// * Default prop values. 
+// * Default prop values.
 ///////////////////////////////////////////////////////////////////////////////
-Card.defaultProps = {
-  title: 'Enter Title',
-  image: '',
-}; 
+Title.defaultProps = {
+  title: "Gaming Site",
+};
 
-export default Card;
+export default Title
