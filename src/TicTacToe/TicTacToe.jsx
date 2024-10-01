@@ -2,12 +2,12 @@ import BackButton from '../SiteOverview/Components/BackButton/BackButton.jsx'
 
 ///////////////////////////////////////////////////////////////////////////////
 /**
- * * The Checkers component.
+ * * The Tic Tac Toe component.
  * 
  * ! This component is not finished yet. 
  */
 ///////////////////////////////////////////////////////////////////////////////
-function Checkers() {
+function TicTacToe() {
   return(
     <>
       <BackButton />
@@ -15,4 +15,4 @@ function Checkers() {
   );
 }
 
-export default Checkers; 
+export default TicTacToe;

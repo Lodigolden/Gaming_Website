@@ -1,6 +1,7 @@
 import Card from './Components/Card/Card.jsx'
 import Title from './Components/Title/Title.jsx'
 import checkersImage from './Components/Card/Assets/Checkers_Image.png'
+import ticTacToeImage from './Components/Card/Assets/TicTacToe_Image.png'
 
 ///////////////////////////////////////////////////////////////////////////////
 /**
@@ -18,7 +19,11 @@ function SiteOverview() {
         image={ checkersImage }
         path='checkers'
       />
-      <Card title='Tic Tac Toe' />
+      <Card 
+        title='Tic Tac Toe'
+        image={ ticTacToeImage }
+        path='tictactoe'
+      />
      </>
   );
 }
