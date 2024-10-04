@@ -1,3 +1,4 @@
+import Tile from './Components/Tile/Tile.jsx'
 import BackButton from '../SiteOverview/Components/BackButton/BackButton.jsx'
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -8,9 +9,12 @@ import BackButton from '../SiteOverview/Components/BackButton/BackButton.jsx'
  */
 ///////////////////////////////////////////////////////////////////////////////
 function TicTacToe() {
+  let value = 'O'
+
   return(
     <>
       <BackButton />
+      <Tile value='X'/>
     </>
   );
 }

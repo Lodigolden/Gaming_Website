@@ -1,0 +1,12 @@
+.tile {
+  border: 10px solid white;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.tile .text {
+  font-family: Arial; 
+  color: white;
+}
