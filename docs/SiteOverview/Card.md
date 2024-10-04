@@ -1,6 +1,8 @@
 # Card
 The **Card** component represents different games. 
 
+[Site Overview](./SiteOverview.md)
+
 ## Props
 ### title
 The name of the card.
@@ -18,3 +20,6 @@ The path the card should navigate to.
 ### handleCardClick()
 Navigates to the given page. 
 > Args: path
+
+#
+[Site Overview](./SiteOverview.md)
