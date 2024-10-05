@@ -7,6 +7,8 @@ import styles from './Tile.module.css'
 /**
  * * A Tile component for the Tic Tac Toe game.
  * 
+ * @param value The value of the tile.
+ * 
  * TODO: This component is not done yet.
  */
 ///////////////////////////////////////////////////////////////////////////////

@@ -7,9 +7,9 @@ import styles from './Card.module.css'
 /**
  * * A Card component for the game site. 
  * 
- * @param title The title of the card
- * @param image The image on the card
- * @param path  The path to the location of the component
+ * @param title The title of the card.
+ * @param image The image on the card.
+ * @param path  The path to the location of the component.
  * 
  * TODO: This component is not done yet. 
  */

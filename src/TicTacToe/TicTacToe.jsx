@@ -1,4 +1,4 @@
-import Tile from './Components/Tile/Tile.jsx'
+import GameBoard from './Components/GameBoard/GameBoard.jsx'
 import BackButton from '../SiteOverview/Components/BackButton/BackButton.jsx'
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -14,7 +14,7 @@ function TicTacToe() {
   return(
     <>
       <BackButton />
-      <Tile value='X'/>
+      <GameBoard />
     </>
   );
 }
