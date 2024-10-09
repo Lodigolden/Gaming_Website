@@ -25,7 +25,7 @@ function TicTacToe() {
     <>
       <BackButton />
       <Title 
-        title={ 'Checkers' }
+        title={ 'Tic Tac Toe' }
       />
       <h1></h1>
       <GameBoard 
