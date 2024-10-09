@@ -13,6 +13,7 @@ This component contains other components, including:
 ## Components
 ### Title
 The **Title** component is the title of the game.
+[Title](../SiteOverview/Title.md)
 
 ### GameBoard
 The **GameBoard** component contains all pieces of TicTacToe.

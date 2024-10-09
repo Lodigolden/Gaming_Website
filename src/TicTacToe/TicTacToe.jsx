@@ -24,7 +24,9 @@ function TicTacToe() {
   return(
     <>
       <BackButton />
-      <Title />
+      <Title 
+        title={ 'Checkers' }
+      />
       <h1></h1>
       <GameBoard 
         setPlayer1={ setPlayer1 }
