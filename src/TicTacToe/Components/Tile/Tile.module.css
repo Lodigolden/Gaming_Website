@@ -1,5 +1,4 @@
 .tile {
-  border: 5px solid white;
   width: 150px;
   height: 150px;
   font-size: 30px;
@@ -12,4 +11,12 @@
   font-family: Arial; 
   text-align: center;
   color: white;
+}
+
+.bottom {
+  border-bottom: 5px solid white;
+}
+
+.right {
+  border-right: 5px solid white;
 }
