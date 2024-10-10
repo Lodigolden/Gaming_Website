@@ -9,10 +9,10 @@ The **Tile** component is a single tile.
 [Tile](./Tile.md)
 
 ## Props
-### setPlayer1
-Sets the current player.
-> Type: function
+### onTileClick
+Function that handles when someone clicks a tile.
+> Type: Function
 
-### player
-The current player (true if 1, false if 2).
-> Type: bool
+### state
+The state of the game.
+> Type: Array of strings

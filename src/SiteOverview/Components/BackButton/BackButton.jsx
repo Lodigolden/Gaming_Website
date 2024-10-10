@@ -1,7 +1,7 @@
+import styles from './BackButton.module.css'
+
 import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
-
-import styles from './BackButton.module.css'
 
 ///////////////////////////////////////////////////////////////////////////////
 /**
@@ -21,7 +21,10 @@ function BackButton() {
   }
 
   return(
-    <div className={ styles.backbutton } onClick={ handleReturnClick }>
+    <div 
+      className={ styles.backbutton } 
+      onClick={ handleReturnClick }
+    >
       <p className={ styles.title }>X</p>
     </div>
   );

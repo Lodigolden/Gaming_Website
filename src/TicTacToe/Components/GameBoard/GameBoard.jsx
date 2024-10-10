@@ -10,60 +10,60 @@ import tileStyles from '../Tile/Tile.module.css'
 /**
  * A GameBoard component for the Tic Tac Toe game.
  * 
- * @param setPlayer1 A function that sets the player.
- * @param player     The current player (true if 1, false if 2).
+ * @param onTileClick Function that handles tile click.
+ * @param state       The state of the game.
  * 
  * TODO: This component is not done yet.
  */
 ///////////////////////////////////////////////////////////////////////////////
-function GameBoard({ setPlayer1, player }) {
+function GameBoard({ onTileClick, state }) {
 
   return(
     <>
       <div className={ styles.gameboard }>
         <Tile 
           border={ `${ tileStyles.bottom } ${ tileStyles.right }` }
-          setPlayer1={ setPlayer1 }
-          player={ player }
+          onTileClick={ () => onTileClick(0) }
+          state={ state[0] }
         />
         <Tile 
           border={ `${ tileStyles.bottom } ${ tileStyles.right }` }
-          setPlayer1={ setPlayer1 }
-          player={ player }
+          onTileClick={ () => onTileClick(1) }
+          state={ state[1] }
         />
         <Tile 
           border={ `${ tileStyles.bottom }` }
-          setPlayer1={ setPlayer1 }
-          player={ player }
+          onTileClick={ () => onTileClick(2) }
+          state={ state[2] }
         />
         <Tile 
           border={ `${ tileStyles.bottom } ${ tileStyles.right }` }
-          setPlayer1={ setPlayer1 }
-          player={ player }
+          onTileClick={ () => onTileClick(3) }
+          state={ state[3] }
         />
         <Tile 
           border={ `${ tileStyles.bottom } ${ tileStyles.right }` }
-          setPlayer1={ setPlayer1 }
-          player={ player }
+          onTileClick={ () => onTileClick(4) }
+          state={ state[4] }
         />
         <Tile 
           border={ `${ tileStyles.bottom }` }
-          setPlayer1={ setPlayer1 }
-          player={ player }
+          onTileClick={ () => onTileClick(5) }
+          state={ state[5] }
         />
         <Tile 
           border={ `${ tileStyles.right }` }
-          setPlayer1={ setPlayer1 }
-          player={ player }
+          onTileClick={ () => onTileClick(6) }
+          state={ state[6] }
         />
         <Tile 
           border={ `${ tileStyles.right }` }
-          setPlayer1={ setPlayer1 }
-          player={ player }
+          onTileClick={ () => onTileClick(7) }
+          state={ state[7] }
         />
         <Tile 
-          setPlayer1={ setPlayer1 }
-          player={ player }
+          onTileClick={ () => onTileClick(8) }
+          state={ state[8] }
         />
       </div>
     </>
@@ -74,7 +74,8 @@ function GameBoard({ setPlayer1, player }) {
 // * Prop data types.
 ///////////////////////////////////////////////////////////////////////////////
 GameBoard.propTypes = {
-  player: PropTypes.bool,
-}
+  onTileClick: PropTypes.func,
+  state:       PropTypes.arrayOf(PropTypes.string),
+};
 
 export default GameBoard;
