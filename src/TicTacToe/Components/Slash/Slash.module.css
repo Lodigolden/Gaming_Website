@@ -1,0 +1,43 @@
+.slash {
+  background-color: darkorange;
+  display: flex;
+  align-items: center;
+  height: 6px;
+  position: absolute;
+}
+
+.slashRow1 {
+  top: 15.5%;
+  left: 20%;
+  width: 60%;
+}
+
+.slashRow2 {
+  top: 49%;
+  left: 20%;
+  width: 60%;
+}
+
+.slashRow3 {
+  top: 82.5%;
+  left: 20%;
+  width: 60%;
+}
+
+.slashCol1 {
+  left: 30.9%;
+  width: 8px;
+  height: 100%;
+}
+
+.slashCol2 {
+  left: 49.5%;
+  width: 8px;
+  height: 100%;
+}
+
+.slashCol3 {
+  left: 68.1%;
+  width: 8px;
+  height: 100%;
+}

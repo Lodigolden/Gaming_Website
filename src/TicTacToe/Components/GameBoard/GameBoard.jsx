@@ -1,14 +1,15 @@
-import PropTypes from 'prop-types'
-import { useState } from 'react'
-
+import Slash from '../Slash/Slash.jsx'
 import Tile from '../Tile/Tile.jsx'
 
+import slashStyles from '../Slash/Slash.module.css'
 import styles from './GameBoard.module.css'
 import tileStyles from '../Tile/Tile.module.css'
 
+import PropTypes from 'prop-types'
+
 ///////////////////////////////////////////////////////////////////////////////
 /**
- * A GameBoard component for the Tic Tac Toe game.
+ * * A GameBoard component for the Tic Tac Toe game.
  * 
  * @param onTileClick Function that handles tile click.
  * @param state       The state of the game.
@@ -21,7 +22,10 @@ function GameBoard({ onTileClick, state }) {
   return(
     <>
       <div className={ styles.gameboard }>
-        <Tile 
+        <Slash 
+          slashType={ `${ slashStyles.slashRow3 }` }
+        />
+        <Tile
           border={ `${ tileStyles.bottom } ${ tileStyles.right }` }
           onTileClick={ () => onTileClick(0) }
           state={ state[0] }

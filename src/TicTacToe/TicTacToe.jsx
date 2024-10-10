@@ -12,7 +12,7 @@ const PLAYER_O = 'O';
 /**
  * * The Tic Tac Toe component.
  * 
- * ! This component is not finished yet. 
+ * TODO: This component is not finished yet. 
  */
 ///////////////////////////////////////////////////////////////////////////////
 function TicTacToe() {
@@ -85,7 +85,6 @@ function TicTacToe() {
       <Title 
         title={ 'Tic Tac Toe' }
       />
-      <h1></h1>
       <GameBoard
         onTileClick={ handleTileClick }
         state={ m_state }

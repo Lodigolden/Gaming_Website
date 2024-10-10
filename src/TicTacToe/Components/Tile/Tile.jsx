@@ -1,7 +1,6 @@
 import styles from './Tile.module.css'
 
 import PropTypes from 'prop-types'
-import { useState } from 'react'
 
 ///////////////////////////////////////////////////////////////////////////////
 /**
@@ -17,13 +16,13 @@ import { useState } from 'react'
 function Tile({ border, onTileClick, state }) {
   return(
     <div 
-      className={ `${styles.tile} ${ border }` } 
+      className={ `${ styles.tile } ${ border }` } 
       onClick={ onTileClick }
     >
       <h1 className={ styles.text }>{ state }</h1>
     </div>
   );
-}
+};
 
 ///////////////////////////////////////////////////////////////////////////////
 // * Prop data types.
