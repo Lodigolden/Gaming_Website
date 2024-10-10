@@ -11,10 +11,6 @@ This component contains other components, including:
 #
 
 ## Components
-### Title
-The **Title** component is the title of the game.
-[Title](../SiteOverview/Title.md)
-
 ### GameBoard
 The **GameBoard** component contains all pieces of TicTacToe.
 [Game Board](./GameBoard.md)
@@ -27,12 +23,31 @@ The **NewGame** component starts a new game.
 The **Slash** component marks a winner.
 [Slash](./Slash.md)
 
+### Title
+The **Title** component is the title of the game.
+[Title](../SiteOverview/Title.md)
+
 ## Members
-### m_is_player1
-The current player (true if 1, false if 2)
-> Type: bool
+### m_player
+The current player.
+> Type: string
+
+### m_state
+The state of the game.
+> Type: Array of strings
 
 ## Methods
-### setPlayer1
-Sets the current player
-> Args: bool
+### handleNewGameClick
+Restarts the game.
+
+### handleTileClick
+Updates the state on a tile click.
+> Args: number
+
+### setPlayer
+Sets the current player.
+> Args: string
+
+### setState
+Sets the state of the game.
+> Args: Array of strings

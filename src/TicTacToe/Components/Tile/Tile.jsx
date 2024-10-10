@@ -1,55 +1,26 @@
+import styles from './Tile.module.css'
+
 import PropTypes from 'prop-types'
 import { useState } from 'react'
-
-import styles from './Tile.module.css'
 
 ///////////////////////////////////////////////////////////////////////////////
 /**
  * * A Tile component for the Tic Tac Toe game.
  * 
- * @param border     What the border of the tile should be.
- * @param setPlayer1 A function that sets the player.
- * @param player     The current player (true if 1, false if 2).
+ * @param border      What the border of the tile should be.
+ * @param onTileClick Function that handles tile click.
+ * @param state       The state of the game.
  * 
  * TODO: This component is not done yet.
  */
 ///////////////////////////////////////////////////////////////////////////////
-function Tile({ border, setPlayer1, player }) {
-  /////////////////////////////////////////////////////////////////////////////
-  /**
-   * * Sets the value of the tile.
-   * 
-   * @param m_value If the tile is '', 'X', or 'O'.
-   */
-  /////////////////////////////////////////////////////////////////////////////
-  const [m_value, setTile] = useState('');
-
-  /////////////////////////////////////////////////////////////////////////////
-  /**
-   * Sets if the tile has been set or not.
-   * 
-   * @param m_is_set True if the tile is set, false if not.
-   */
-  /////////////////////////////////////////////////////////////////////////////
-  const [m_is_set, set] = useState(false);
-
-  /////////////////////////////////////////////////////////////////////////////
-  // * Handles when someone clicks on the tile.
-  /////////////////////////////////////////////////////////////////////////////
-  const handleTileClick = () => {
-    if (!m_is_set) {
-      setTile((player === true) ? 'X' : 'O');
-      set(true);
-      setPlayer1(!player);
-    }
-  }
-
+function Tile({ border, onTileClick, state }) {
   return(
     <div 
       className={ `${styles.tile} ${ border }` } 
-      onClick={ handleTileClick }
+      onClick={ onTileClick }
     >
-      <h1 className={ styles.text }>{ m_value }</h1>
+      <h1 className={ styles.text }>{ state }</h1>
     </div>
   );
 }
@@ -58,8 +29,9 @@ function Tile({ border, setPlayer1, player }) {
 // * Prop data types.
 ///////////////////////////////////////////////////////////////////////////////
 Tile.propTypes = {
-  border: PropTypes.string,
-  player: PropTypes.bool,
+  border:      PropTypes.string,
+  onTileClick: PropTypes.func,
+  state:       PropTypes.string,
 };
 
 export default Tile;
